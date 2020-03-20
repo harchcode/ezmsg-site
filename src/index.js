@@ -15,6 +15,10 @@ let first = true;
 
 for (let k in guide) {
   const v = guide[k];
+  const doc = new DOMParser().parseFromString(v, 'text/html');
+  const titleDOM = doc.getElementsByTagName('h1')[0];
+
+  doc.body.removeChild(titleDOM);
 
   const btn = document.createElement('button');
   btn.dataset.guideToggle = k;
@@ -28,12 +32,16 @@ for (let k in guide) {
     btn.classList.add('ml-2');
   }
 
-  btn.innerHTML = 'Temporary';
+  btn.innerHTML = titleDOM.innerHTML;
   guideToggleDiv.append(btn);
 
   const div = document.createElement('div');
   div.dataset.guideItem = k;
-  div.innerHTML = v;
+
+  while (doc.body.childNodes.length) {
+    div.appendChild(doc.body.firstChild);
+  }
+
   guideItemDiv.append(div);
 }
 
