@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css?family=Mali:400,400i,700" rel="stylesheet">
+  <title>EzMsg - Tiny data for the web</title>
+</head>
+<body>
+  <div class="relative bg-white max-w-screen-sm mx-auto px-4 py-12 bg-white border-gray-900 border-x2 border-2 sm:my-8 overflow-hidden">
+    <div class="flex items-center">
+      <h1 class="flex-1 font-bold text-5xl leading-none">
+        <span class="text-gray-200 text-outline">Ez</span><span class="text-outline text-white">Msg</span>
+      </h1>
+      <a href="#" class="w-12 mt-1 block pointer">
+        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" fill="#212121"/>
+        </svg>
+      </a>
+    </div>
+    <div class="flex mt-8 justify-around">
+      <button data-goto="about" type="button" class="btn w-24 border-x1 p-4">About</button>
+      <button data-goto="api" type="button" class="btn w-24 border-x2 p-4">API</button>
+      <button data-goto="guide" type="button" class="btn w-24 border-x3 p-4">Guide</button>
+    </div>
+    <div id="about" class="mt-8" data-content="about"></div>
+    <div id="api" class="mt-8" data-content="api"></div>
+    <div id="guide" class="mt-8">
+      <h2>Guide</h2>
+      <div class="flex flex-wrap mt-2" data-guide-toggles></div>
+      <div class="mt-4" data-guide-items></div>
+    </div>
+
+    <div class="mt-16 text-xs text-gray-700">
+      <div>CSS by <a href="https://tailwindcss.com/">TailwindCSS</a>.</div>
+      <div>Border CSS by <a href="https://www.getpapercss.com/">Paper CSS</a>.</div>
+      <div>Syntax Highlighting by <a href="https://prismjs.com/">PrismJS</a>.</div>
+      <div>Fonts by <a href="https://fonts.google.com/">Google Fonts</a>.</div>
+      <div>GitHub icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</div>
+    </div>
+
+    <div class="w-2 h-2 bg-gray-400 border border-black absolute top-0 left-0 rounded-full mt-4 ml-8"></div>
+    <div class="w-2 h-2 bg-gray-400 border border-black absolute top-0 right-0 rounded-full mt-4 mr-8"></div>
+    <div class="w-2 h-2 bg-gray-400 border border-black absolute bottom-0 left-0 rounded-full mb-4 ml-8"></div>
+    <div class="w-2 h-2 bg-gray-400 border border-black absolute bottom-0 right-0 rounded-full mb-4 mr-8"></div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
