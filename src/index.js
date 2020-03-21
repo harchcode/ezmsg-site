@@ -1,13 +1,7 @@
 import Prism from 'prismjs';
 import { tween } from './utils';
 
-const content = require('./content/*.md');
 const guide = require('./guide/*.md');
-
-const contentDivs = document.querySelectorAll('[data-content]');
-contentDivs.forEach(el => {
-  el.innerHTML = content[el.dataset.content];
-});
 
 const guideToggleDiv = document.querySelector('[data-guide-toggles]');
 const guideItemDiv = document.querySelector('[data-guide-items]');

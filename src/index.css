@@ -78,7 +78,7 @@ h3 {
 }
 
 ul, ol {
-  @apply ml-8;
+  @apply ml-6;
 }
 
 ul {

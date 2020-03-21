@@ -8,7 +8,7 @@ npm i ezmsg-web
 
 ### Features
 
-- Tiny (~1KB).
+- Tiny (~1KB minified and gzipped).
 - Ready to use with Typescript (this library is written in Typescript actually).
 
 ### Basic usage
