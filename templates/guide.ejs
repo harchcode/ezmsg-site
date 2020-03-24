@@ -1,10 +1,11 @@
 <%- include('partials/head.ejs') %>
 
-<div class="mt-8 flex flex-wrap justify-center">
+<div class="mt-4 flex flex-wrap">
   <% guideMenu.forEach((guide, i) => { %>
-    <div class="<%= i > 0 ? 'ml-4' : '' %> border-blue-500<%= path.getDepth(2) === guide.link ? ' border-b-2 font-bold' : '' %>">
-      <a class="text-xl text-blue-500 no-underline" href="<%= `${path.root}guide/${guide.link}` %>"><%= guide.label %></a>
-    </div>
+    <a 
+      href="<%= `${path.root}guide/${guide.link}` %>"
+      class="<%= i > 0 ? 'ml-2' : '' %> btn text-gray-900 border-x1 p-2<%= path.getDepth(2) === guide.link ? ' active' : '' %>"
+    ><%= guide.label %></a>
   <% }) %>
 </div>
 

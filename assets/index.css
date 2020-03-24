@@ -103,4 +103,8 @@ pre code {
   @apply bg-transparent p-0;
 }
 
+span.hljs-attr {
+  @apply text-red-800;
+}
+
 @tailwind utilities;

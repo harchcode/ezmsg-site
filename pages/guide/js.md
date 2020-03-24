@@ -1,5 +1,6 @@
 ---
 title: Javascript (Web)
+description: EzMsg for browser Javascript guide.
 layout: guide
 ---
 
