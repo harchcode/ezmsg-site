@@ -6,11 +6,16 @@
   "scripts": {
     "dev": "ts-node watch",
     "build": "rm -rf dist && NODE_ENV=production ts-node build",
-    "lint": "eslint './{src,test}/**/*.{js,ts}'"
+    "lint": "eslint ./build.ts ./watch.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "dependencies": { },
   "devDependencies": {
     "@babel/core": "^7.8.7",

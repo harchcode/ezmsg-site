@@ -3,7 +3,7 @@
 import util from 'util';
 import fs from 'fs';
 import path from 'path';
-import chalk from 'chalk';
+// import chalk from 'chalk';
 import ejs from 'ejs';
 import MarkdownIt from 'markdown-it';
 import fm from 'front-matter';
@@ -27,9 +27,9 @@ const md = MarkdownIt({
   }
 });
 
-const error = (str: any) => console.error(chalk.bold.red(str));
-const log = (str: any) => console.log(chalk.gray(str));
-const success = (str: any) => console.log(chalk.bold.green(str));
+// const error = (str: any) => console.error(chalk.bold.red(str));
+// const log = (str: any) => console.log(chalk.gray(str));
+// const success = (str: any) => console.log(chalk.bold.green(str));
 
 const getPath = (rel: string) => path.join(__dirname, rel);
 const readFile = util.promisify(fs.readFile);
