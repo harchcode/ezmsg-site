@@ -1,0 +1,15 @@
+<%- include('partials/head.ejs') %>
+
+<div class="mt-8 flex flex-wrap justify-center">
+  <% guideMenu.forEach((guide, i) => { %>
+    <div class="<%= i > 0 ? 'ml-4' : '' %> border-blue-500<%= path.getDepth(2) === guide.link ? ' border-b-2 font-bold' : '' %>">
+      <a class="text-xl text-blue-500 no-underline" href="<%= `${path.root}guide/${guide.link}` %>"><%= guide.label %></a>
+    </div>
+  <% }) %>
+</div>
+
+<div class="mt-8">
+  <%- page.content %>
+</div>
+
+<%- include('partials/foot') %>

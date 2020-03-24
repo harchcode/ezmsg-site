@@ -51,14 +51,14 @@ button:focus {
 
 .text-outline {
   text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+   -1px -1px 0 #718096,  
+    1px -1px 0 #718096,
+    -1px 1px 0 #718096,
+     1px 1px 0 #718096;
 }
 
 a {
-  text-decoration: underline;
+  @apply underline text-blue-800;
 }
 
 p, ul, ol {
@@ -70,7 +70,7 @@ li {
 }
 
 h2 {
-  @apply text-2xl;
+  @apply text-2xl mt-8;
 }
 
 h3 {
@@ -90,7 +90,7 @@ ol {
 }
 
 pre {
-  @apply border-2 border-gray-400 rounded;
+  @apply border-2 rounded mt-2 p-4 bg-orange-100;
 }
 
 code {

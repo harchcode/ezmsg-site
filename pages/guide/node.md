@@ -1,17 +1,20 @@
-# Node
+---
+title: Javascript (Web)
+layout: guide
+---
 
-### Installation
+## Installation
 
 ```bash
 npm i ezmsg-node
 ```
 
-### Features
+## Features
 
 - Tiny (~1KB minified and gzipped).
 - Ready to use with Typescript (this library is written in Typescript actually).
 
-### Basic usage
+## Basic usage
 
 ```js
 // Import
@@ -41,7 +44,7 @@ const buffer = serialize(data, schema);
 const result = deserialize(buffer, schema);
 ```
 
-### Array and Object type
+## Array and Object type
 
 ```js
 // Import
@@ -92,5 +95,5 @@ const buffer = serialize(data, schema);
 const result = deserialize(buffer, schema);
 ```
 
-### Caveats
+## Caveats
 - There will be decimal errors when deserializing f32 and f64 values. It is recommended that you always round it when you are going to use the value.
