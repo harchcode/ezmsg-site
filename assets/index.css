@@ -37,15 +37,11 @@ button:focus {
 .btn {
   @apply shadow-md p-2 border-2 bg-white border-gray-900 text-center no-underline;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .btn.active {
-  @apply bg-gray-200;
-}
-
-.btn:focus, .btn.active {
-  @apply shadow;
+  @apply bg-gray-200 shadow;
   transform: translate(0, 2px);
 }
 
@@ -90,7 +86,7 @@ ol {
 }
 
 pre {
-  @apply border-2 rounded mt-2 p-4 bg-orange-100;
+  @apply border-2 rounded mt-2 p-4 bg-orange-100 overflow-auto;
 }
 
 code {
